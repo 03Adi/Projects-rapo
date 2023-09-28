@@ -3,7 +3,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-class Game{
+class numbergame{
 	public static void main(String args[])
     { 
     		generateRandom();
