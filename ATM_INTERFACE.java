@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 
 
@@ -29,12 +28,6 @@ public class ATM_INTERFACE
 		
 		// create pins for the accounts
 		final String pin[] = {"2312","2345","1178","7614","6519"};
-		// name names for the accounts
-		final String name[] = {"Charu","Prakhar","shivam","Aditya","APP"};
-		
-		// random number to generate balance
-		Random random = new Random();
-		
 		// create accounts
 		for( int i=0; i<numAccounts; i++)
 			accounts[i] = new Account();
@@ -58,8 +51,6 @@ public class ATM_INTERFACE
 		
 		// ask for pin
 		System.out.println("Enter pin : ");
-		String pins = scanner.next();
-		
 		// if wrong pin
 		if( !pin.equals(accounts[id].getPin()))
 		{
